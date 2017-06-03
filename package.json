@@ -1,0 +1,33 @@
+{
+  "name": "meanapp1",
+  "version": "1.0.0",
+  "description": "Mean App Example 1",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app"
+  },
+  "dependencies": {
+    "express": "*" ,
+    "mongoose": "*",
+    "bcryptjs": "*",
+    "cors": "*",
+    "jsonwebtoken": "*",
+    "body-parser": "*",
+    "passport": "*",
+    "passport-jwt": "*"
+  },
+  "author": "Rimpy Bharot",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rimpybharot/meanappexample.git"
+  },
+  "keywords": [
+    "mean"
+  ],
+  "bugs": {
+    "url": "https://github.com/rimpybharot/meanappexample/issues"
+  },
+  "homepage": "https://github.com/rimpybharot/meanappexample#readme"
+}
