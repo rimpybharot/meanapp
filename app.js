@@ -4,13 +4,13 @@ const bodyParser = require("body-parser");
 const cors = require("cors");
 const passport = require("passport");
 const mongoose = require("mongoose");
-const config = require("./config/database")
+const config = require("./config/database");
 
 mongoose.connect(config.database);
 
 mongoose.connection.on('connected', function () {
     console.log("connected");
-})
+});
 
 const app = express();
 
@@ -34,6 +34,8 @@ app.use(bodyParser.json());
 //Passport MiddleWare
 app.use(passport.initialize());
 app.use(passport.session());
+
+require('./config/passport')(passport);
 
 app.use('/users', users);
 
