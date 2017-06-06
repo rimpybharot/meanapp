@@ -27,7 +27,7 @@ User.addUser(newUser, function(err, user) {
 // Authenticate
 router.post('/authenticate', function(req, res, next){
     const username = req.body.username;
-const password = req.body.password;
+    const password = req.body.password;
 
 User.getUserByUsername(username, function(err, user)  {
     if(err) throw err;
